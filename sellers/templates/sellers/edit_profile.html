@@ -1,0 +1,17 @@
+{% extends 'sellers/dashboard.html' %}
+
+{% block content %}
+
+<div class="container" >
+    <h1>Edit profile page</h1>
+
+<form  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{form}}
+
+    <button type="submit" class="btn btn-outline-info">Save</button>
+</form>
+</div>
+
+{% endblock content %}

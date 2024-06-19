@@ -1,0 +1,13 @@
+{% extends 'sellers/dashboard.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Register Page</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn btn-outline-info" type="submit">Register</button>
+    </form>
+</div>
+{% endblock content %}

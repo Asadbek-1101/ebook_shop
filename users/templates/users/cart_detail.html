@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!--==============================
+    Feature Products
+    ==============================-->
+    <section class="sec-bg3 vs-shop-wrapper   " data-bg-src="{% static 'assets/img/shape/bg-00778.png' %}">
+        <div class="section-title text-center">
+            <div class="sec-icon"><img src="{% static 'assets/img/icons/sec-icon-2.png' %}" alt="icon"></div>
+            <span class="sub-title4">Savat</span>
+            <h2 class="sec-title3">Buyurtmalaringiz</h2>
+        </div>
+        <div class="container position-relative">
+            <div class="filter-menu2 vs-slideTab" data-asnavfor="#shopSlide8440">
+                <button class="tab-btn active" data-bs-toggle="tooltip" data-bs-placement="left" title="{{cat.name}}">
+                    <img src="{% static 'assets/img/shape/filter-icon-bg-1-2.png' %}" alt="image" class="bg-1">
+                    <img src="{% static 'assets/img/shape/filter-icon-bg-1-1.png' %}" alt="image" class="bg-2">
+                    <i class="flaticon-salad"></i>
+                </button>
+            </div>
+
+            <div class="vs-carousel" data-slide-show="1" data-lg-slide-show="1" data-md-slide-show="1" data-sm-slide-show="1" data-fade="true" id="shopSlide8440">
+                <div id="BestSeller">
+                    <div class="row gx-2px justify-content-center">
+                    {% for cart in cart %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="vs-product-box3 ">
+                                <div class="product-img">
+                                    <a href=""><img src="{{cart.books.image.url}}" alt="Product Image" class="w-100"></a>
+                                    <span class="product-tag2">New</span><span class="product-tag3">Book</span>
+                                </div>
+                                <div class="actions-btn">
+                                    <a href="{{ cart.books.images.url }}" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
+                                    <a href="" class="vs-btn style4 cart-btn">Delete</a>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-rating-box">5.0<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                                    </div>
+                                    <h4 class="product-title"><a href="shop-details.html">{{cart.books.name}}</a></h4>
+                                    <span class="price"><strong>${{cart.books.price}}</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,433 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fazogir Books</title>
+    <meta name="author" content="Vecuro">
+    <meta name="description" content="Foodano - Organic Food Store HTML Template">
+    <meta name="keywords" content="Foodano - Organic Food Store HTML Template" />
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--==============================
+	   Google Web Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500;600;700&family=Amatic+SC:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/img/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/img/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/img/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/img/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/img/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/img/favicons/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/img/favicons/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/img/favicons/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/img/favicons/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'assets/img/favicons/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'assets/img/favicons/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'assets/img/favicons/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'assets/img/favicons/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.min.css' %}">
+    <!-- Layerslider -->
+    <link rel="stylesheet" href="{% static 'assets/css/layerslider.min.css' %}">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="{% static 'assets/css/jquery.datetimepicker.min.css' %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.min.css' %}">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body class=" home-8">
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here
+	******************************** -->
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Road</button>
+        <div class="preloader-inner">
+            <div class="loader-logo">
+                 <h1>Fazogir Books</h1>
+            </div>
+            <div class="loader-wrap pt-4">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+    <!--========================
+    Sticky Header
+========================-->
+    <div class="sticky-header-wrap sticky-header py-2 py-lg-1">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-3">
+                    <div class="logo">
+                        <a href="index.html"><img src="{% static 'assets/img/logo.svg' %}" alt="Foodano"></a>
+                    </div>
+                </div>
+                <div class="col-7 col-md-9 text-end position-static">
+                    <nav class="main-menu menu-sticky1 d-none d-lg-block link-inherit">
+                        <ul>
+                            <li>
+                                <a href="{% url 'home' %}">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="{% static 'assets/img/logo.svg' %}" alt="Foodano"></a>
+            </div>
+            <div class="vs-mobile-menu link-inherit"></div>
+        </div>
+    </div>
+    <!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose border-theme text-theme"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="What are you looking for">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--==============================
+        Header Area
+    ==============================-->
+    <header class="header-wrapper header-layout7">
+        <div class="header-top">
+            <div class="header-top-shape"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto col-xxl-3 d-none d-lg-block">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'users:logout' %}" class="header-login"><i class="fas fa-user-circle"></i> Logout</a>
+                        {% else %}
+                        <a href="{% url 'users:login' %}" class="header-login"><i class="fas fa-user-circle"></i> Login</a>&nbsp; &nbsp;
+                        <a href="{% url 'users:signup' %}" class="header-login">Register</a>
+                        {% endif %}
+                    </div>
+                    <div class="col-auto col-xxl-4  d-none d-lg-block">
+                        <div class="social-header">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-xxl text-center text-lg-end py-2 py-lg-0">
+                        <div class="header-infos">
+                            <p class="info"><i class="fas fa-phone-alt"></i>Phone:<a href="tel:+998902307169">+998902307169</a></p>
+                            <p class="info d-none d-sm-inline-block"><i class="fas fa-envelope"></i>Email:<a href="fazogirbooks@gmail.com">fazogirbooks@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area">
+            <div class="header-shape" data-bg-src="{% static 'assets/img/shape/header-shape-9-1.png' %}"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col col-lg-auto py-3 py-lg-0">
+                        <div class="header-logo" style="color:#ffffff">
+                            <h2>Fazogir Books</h2>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class="main-menu mobile-menu-active menu-style4">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'home' %}">Home</a>
+                                </li>
+                                {% if user.is_authenticated %}
+                                    {% if user.user_role == 'admin' %}
+                                    <li><a href="{% url 'users:profile' %}">User profile</a></li>
+                                    {% endif %}
+                                    {% if user.user_role == 'seller' %}
+                                    <li><a href="{% url 'sellers:profile' %}">Seller profile</a></li>
+                                    {% endif %}
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-auto d-none d-sm-block">
+                        <div class="header-buttons">
+                            <button type="button" class="searchBoxTggler"><i class="far fa-search"></i></button>
+                            <a href="{% url 'users:cart' %}"><i class="fal fa-shopping-cart"></i><span class="badge">{{count}}</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--==============================
+     Hero Area
+    ==============================-->
+    <section class="hero-layout8  ">
+        <div class="vs-hero-carousel" data-navprevnext="true" data-height="795" data-container="1900" data-slidertype="responsive">
+
+            <!-- Slide 1-->
+            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:in; kenburnsscale:1.1;">
+                <img width="1920" height="796" src="{% static 'assets/img/hero/new.jpg' %}" class="ls-bg" alt="bg" />
+                <img width="263" height="236" src="{% static 'assets/img/hero/new_item1.jpg' %}" class="ls-l ls-hide-tablet ls-hide-phone" alt="" style="top:140px; left:610px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:-200; offsetyin:top; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:380px; left:464px; font-weight:700; background-size:inherit; background-position:inherit; font-size:90px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    Fazogir Books
+                </h1>
+                <p style="top:497px; left:480px; text-align:center; background-size:inherit; background-position:inherit; font-size:18px; color:#ffffff; line-height:32px; width:520px; white-space:normal;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:200; durationin:1500; delayin:500; easingin:easeOutQuint; offsetyout:300; durationout:1500; easingout:easeOutQuint;">Kitoblarni tez va osson yetkazib beruvchi online do'kon. Mutola zavqini his qiling!</p>
+                <div style="top:605px; left:480px; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:520px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:150; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
+                    <a href="shop.html" class="vs-btn style6 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
+                </div>
+                <img width="263" height="236" src="{% static 'assets/img/hero/hero-8-1-1.png' %}" class="ls-l ls-hide-desktop ls-hide-phone" alt="" style="top:62px; left:1416px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:-200; offsetyin:top; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:153px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; font-size:120px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    Fazogir Books
+                </h1>
+                <p style="top:319px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:30px; color:#ffffff; width:820px; line-height:50px; white-space:normal;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:200; durationin:1500; delayin:500; easingin:easeOutQuint; offsetyout:300; durationout:1500; easingout:easeOutQuint;">Kitoblarni tez va osson yetkazib beruvchi online do'kon. Mutola zavqini his qiling!</p>
+                <a class="ls-l ls-hide-desktop ls-hide-phone" href="shop.html" target="_self" data-ls="offsetyin:150; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint; hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff;"><span style='top:478px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; padding-top:40px; padding-right:80px; padding-bottom:40px; padding-left:80px; font-family:"Lato", sans-serif; font-size:32px; background-color:#ffffff; color:#000000; border-radius:9999px;' class="">START SHOPPING</span></a>
+                <h1 style="top:135px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; font-size:160px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    Fazogir Books
+                </h1>
+                <a class="ls-l ls-hide-desktop ls-hide-tablet" href="shop.html" target="_self" data-ls="offsetyin:150; durationin:1500; delayin:400; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint; hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff;"><span style='top:385px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; padding-top:60px; padding-right:120px; padding-bottom:60px; padding-left:120px; font-family:"Lato", sans-serif; font-size:62px; background-color:#ffffff; color:#000000; border-radius:9999px;' class="">START SHOPPING</span></a>
+                <img width="263" height="236" src="{% static 'assets/img/hero/hero-8-1-1.png' %}" class="ls-l ls-hide-desktop ls-hide-tablet" alt="" style="top:442px; left:13px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:50; offsetyin:100; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+            </div>
+
+            <!-- Slide 2-->
+            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:out; kenburnsscale:1.1;">
+                <img width="1920" height="795" src="{% static 'assets/img/hero/new3.jpg' %}" class="ls-bg" alt="hero bg" />
+                <img width="263" height="236" src="{% static 'assets/img/hero/new_item2.jpg' %}" class="ls-l ls-hide-tablet ls-hide-phone" alt="" style="top:140px; left:610px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:-200; offsetyin:top; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:380px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:90px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    G'ayrioddiy factlar g'ayrioddiy isbotlarni talab qiladi
+                </h1>
+                <p style="top:497px; left:480px; text-align:center; background-size:inherit; background-position:inherit; font-size:18px; color:#ffffff; line-height:32px; width:520px; white-space:normal;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:200; durationin:1500; delayin:500; easingin:easeOutQuint; offsetyout:300; durationout:1500; easingout:easeOutQuint;">Kitoblarni tez va osson yetkazib beruvchi online do'kon. Mutola zavqini his qiling!</p>
+                <div style="top:605px; left:480px; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:520px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:150; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
+                    <a href="shop.html" class="vs-btn style6 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
+                </div>
+                <img width="263" height="236" src="{% static 'assets/img/hero/hero-8-1-1.png' %}" class="ls-l ls-hide-desktop ls-hide-phone" alt="" style="top:62px; left:1416px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:-200; offsetyin:top; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:153px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; font-size:120px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    G'ayrioddiy factlar g'ayrioddiy isbotlarni talab qiladi
+                </h1>
+                <p style="top:319px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:30px; color:#ffffff; width:820px; line-height:50px; white-space:normal;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:200; durationin:1500; delayin:500; easingin:easeOutQuint; offsetyout:300; durationout:1500; easingout:easeOutQuint;">Kitoblarni tez va osson yetkazib beruvchi online do'kon. Mutola zavqini his qiling!</p>
+                <a class="ls-l ls-hide-desktop ls-hide-phone" href="shop.html" target="_self" data-ls="offsetyin:150; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint; hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff;"><span style='top:478px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; padding-top:40px; padding-right:80px; padding-bottom:40px; padding-left:80px; font-family:"Lato", sans-serif; font-size:32px; background-color:#ffffff; color:#000000; border-radius:9999px;' class="">START SHOPPING</span></a>
+                <h1 style="top:135px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; font-size:160px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    G'ayrioddiy factlar g'ayrioddiy isbotlarni talab qiladi
+                </h1>
+                <a class="ls-l ls-hide-desktop ls-hide-tablet" href="shop.html" target="_self" data-ls="offsetyin:150; durationin:1500; delayin:400; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint; hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff;"><span style='top:385px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; padding-top:60px; padding-right:120px; padding-bottom:60px; padding-left:120px; font-family:"Lato", sans-serif; font-size:62px; background-color:#ffffff; color:#000000; border-radius:9999px;' class="">START SHOPPING</span></a>
+                <img width="263" height="236" src="{% static 'assets/img/hero/hero-8-1-1.png' %}" class="ls-l ls-hide-desktop ls-hide-tablet" alt="" style="top:442px; left:13px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:50; offsetyin:100; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+            </div>
+
+            <!-- Slide 3-->
+            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:in; kenburnsscale:1.1;">
+                <img width="1920" height="795" src="{% static 'assets/img/hero/new2.jpg' %}" class="ls-bg" alt="hero bg" />
+                <img width="263" height="236" src="{% static 'assets/img/hero/new_item3.jpg' %}" class="ls-l ls-hide-tablet ls-hide-phone" alt="" style="top:140px; left:610px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:-200; offsetyin:top; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:380px; left:452px; font-weight:700; background-size:inherit; background-position:inherit; font-size:90px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    Bilim bu kuch
+                </h1>
+                <p style="top:497px; left:480px; text-align:center; background-size:inherit; background-position:inherit; font-size:18px; color:#ffffff; line-height:32px; width:520px; white-space:normal;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:200; durationin:1500; delayin:500; easingin:easeOutQuint; offsetyout:300; durationout:1500; easingout:easeOutQuint;">Delicious, organic food and drink with less packaging and lower food miles. What more do you need?</p>
+                <div style="top:605px; left:480px; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:520px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:150; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
+                    <a href="shop.html" class="vs-btn style6 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
+                </div>
+                <img width="263" height="236" src="{% static 'assets/img/hero/hero-8-1-1.png' %}" class="ls-l ls-hide-desktop ls-hide-phone" alt="" style="top:62px; left:1416px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:-200; offsetyin:top; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:153px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; font-size:120px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    Bilim bu kuch
+                </h1>
+                <p style="top:319px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:30px; color:#ffffff; width:820px; line-height:50px; white-space:normal;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:200; durationin:1500; delayin:500; easingin:easeOutQuint; offsetyout:300; durationout:1500; easingout:easeOutQuint;">Delicious, organic food and drink with less packaging and lower food miles. What more do you need?</p>
+                <a class="ls-l ls-hide-desktop ls-hide-phone" href="shop.html" target="_self" data-ls="offsetyin:150; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint; hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff;"><span style='top:478px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; padding-top:40px; padding-right:80px; padding-bottom:40px; padding-left:80px; font-family:"Lato", sans-serif; font-size:32px; background-color:#ffffff; color:#000000; border-radius:9999px;' class="">START SHOPPING</span></a>
+                <h1 style="top:135px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; font-size:160px; color:#ffffff; font-family:'Amatic SC', cursive;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:200; durationin:1600; easingin:easeOutQuint;">
+                    Bilim bu kuch
+                </h1>
+                <a class="ls-l ls-hide-desktop ls-hide-tablet" href="shop.html" target="_self" data-ls="offsetyin:150; durationin:1500; delayin:400; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint; hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff;"><span style='top:385px; left:50%; font-weight:700; background-size:inherit; background-position:inherit; padding-top:60px; padding-right:120px; padding-bottom:60px; padding-left:120px; font-family:"Lato", sans-serif; font-size:62px; background-color:#ffffff; color:#000000; border-radius:9999px;' class="">START SHOPPING</span></a>
+                <img width="263" height="236" src="{% static 'assets/img/hero/hero-8-1-1.png' %}" class="ls-l ls-hide-desktop ls-hide-tablet" alt="" style="top:442px; left:13px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:50; offsetyin:100; durationin:1500; rotatein:-90; durationout:1500; easingout:easeOutQuint;">
+            </div>
+
+        </div>
+    </section>
+    {% block content %}
+
+    {% endblock content %}
+    <!--********************************
+			Code End  Here
+	******************************** -->
+
+        <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout3" data-bg-src="{% static 'assets/img/shape/footer-6-1.jpg' %}">
+        <form action="#" class="newsletter-style3" data-bg-src="{% static 'assets/img/shape/newsletter-bg-2-100324.png' %}">
+            <div class="row justify-content-between align-items-center text-center text-xxl-start ">
+                <div class="col-xxl-auto mb-20 mb-xxl-0">
+                    <span class="sub-title4">Bilimlar kaliti faqat biz bilan</span>
+                    <h2 class="form-title">Fazogir Books</h2>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="widget-area">
+                <div class="row gx-0">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Customer service</h3>
+                            <div class="menu-all-pages-container footer-links">
+                                <ul class="menu">
+                                    <li><a href="#">Product recalls</a></li>
+                                    <li><a href="#">Delivery information</a></li>
+                                    <li><a href="#">Site map</a></li>
+                                    <li><a href="#">Branch finder</a></li>
+                                    <li><a href="#">Refunds</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">About Us</h3>
+                            <div class="menu-all-pages-container footer-links">
+                                <ul class="menu">
+                                    <li><a href="#">Product recalls</a></li>
+                                    <li><a href="#">Delivery information</a></li>
+                                    <li><a href="#">Site map</a></li>
+                                    <li><a href="#">Branch finder</a></li>
+                                    <li><a href="#">Refunds</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">My Account</h3>
+                            <div class="menu-all-pages-container footer-links">
+                                <ul class="menu">
+                                    <li><a href="blog.html">Latest Blog</a></li>
+                                    <li><a href="about.html">Order History</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="widget  footer-widget">
+                            <h3 class="widget_title">Contact Us</h3>
+                            <div class="vs-contact-widget">
+                                <p class="contact-footer"><i class="fas fa-phone-alt"></i><a href="tel:+387643932728">+387643932728</a></p>
+                                <p class="contact-footer"><i class="fas fa-envelope"></i><a href="mailto:Foodano@domain.com">Foodano@domain.com</a></p>
+                                <p class="contact-footer"><i class="fas fa-map-marker-alt"></i>Harbour House, 60 Purewell, Christchurch, England</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area" data-bg-src="{% static 'assets/img/shape/footer-5-2.png' %}">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-auto text-center text-lg-start">
+                        <div class="copyright">
+                            <p class="mb-0 link-inherit">Copyright &copy; 2022 <a href="index.html">Foodano</a> - All Rights Reserved by <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="copyright-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i>Linked In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Top Button -->
+    <a href="#" class="scrollToTop"><i class="far fa-angle-up"></i></a>
+
+
+
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- <script src="assets/js/app.min.js"></script> -->
+    <!-- Layerslider -->
+    <script src="{% static 'assets/js/layerslider.utils.js' %}"></script>
+    <script src="{% static 'assets/js/layerslider.transitions.js' %}"></script>
+    <script src="{% static 'assets/js/layerslider.kreaturamedia.jquery.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Date Picker -->
+    <script src="{% static 'assets/js/jquery.datetimepicker.min.js' %}"></script>
+    <!-- Filter -->
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Jquery UI -->
+    <script src="{% static 'assets/js/jquery-ui.min.js' %}"></script>
+    <!-- WOW JS (Animation JS) -->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <!-- Custom Carousel -->
+    <script src="{% static 'assets/js/vscustom-carousel.min.js' %}"></script>
+    <!-- Mobile Menu -->
+    <script src="{% static 'assets/js/vsmenu.min.js' %}"></script>
+    <!-- Form Js -->
+    <script src="{% static 'assets/js/ajax-mail.js' %}"></script>
+    <!-- Main Js File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
